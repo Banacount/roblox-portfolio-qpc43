@@ -1,0 +1,32 @@
+@media only screen and (max-width: 273px) {
+  .panel-1 {
+    flex-direction: column;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .tile-1 {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .panel-1 {
+    width: 95%;
+  }
+
+  .panel-2 {
+    width: 95%;
+  }
+
+  .game-card {
+    width: 5rem;
+    height: 7rem;
+  }
+
+  .game-thumbnail {
+    width: 5.5rem;
+    height: 7rem;
+  }
+}
