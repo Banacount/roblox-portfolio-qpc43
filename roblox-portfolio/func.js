@@ -12,6 +12,7 @@ gamestotal.map((item) => {
   gameCard.className = "game-card green-glow";
   gameThumbnail.className = "game-thumbnail";
   gameTitle.className = "game-title";
+  gameCard.tabIndex = "0"
   //Appending data from list
   gameTitle.innerHTML = item.gameName;
   gameThumbnail.style.backgroundImage = `url(${item.thumbnail})`;
