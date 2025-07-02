@@ -2,6 +2,7 @@
 :root {
   --color-pallet-1: #09b300;
   --color-pallet-2: #071400;
+  --color-pallet-3: #131a0f;
 }
 
 
@@ -9,12 +10,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'bitwise';
-  background-color: #000000;
+  background-color: var(--color-pallet-2);
 }
+
+/*#000000*/
 
 p {
   font-family: 'basicmanual';
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--color-pallet-1);
 }
 
@@ -24,6 +27,18 @@ h1 {
   color: var(--color-pallet-1);
   filter: drop-shadow(0px 0px 7px var(--color-pallet-1));
 }
+
+h2 {
+  margin: 0;
+  font-size: 1.7rem;
+  font-family: 'basicmanual';
+  color: var(--color-pallet-1);
+}
+
+button {
+  border-radius: 1rem;
+}
+
 
 /* Tile 1 */
 .tile-1 {
@@ -43,7 +58,7 @@ h1 {
   align-items: center;
   flex-direction: row;
   background-color: #131a0f;
-  gap: 1rem;
+  gap: 0.8rem;
   padding: 5vw;
 }
 
@@ -92,7 +107,7 @@ h1 {
   padding: 5vw;
 }
 
-#skillsBtn {
+#projectBtn {
   width: 70%;
   height: 4rem;
   font-size: 2rem;
@@ -101,6 +116,7 @@ h1 {
   margin-top: 1rem;
   background-color: #045900;
   box-shadow: 0px 0px 10px var(--color-pallet-1);
+  cursor: pointer;
 }
 
 
@@ -111,6 +127,9 @@ h1 {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #000000;
 }
 
 .menu-1 {
@@ -132,8 +151,8 @@ h1 {
 }
 
 .game-card {
-  width: 7rem;
-  height: 9rem;
+  width: 9rem;
+  height: 11rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -142,8 +161,8 @@ h1 {
   padding: 1rem;
   user-select: none;
   cursor: help;
-  background-color: transparent;
-  transition: 0.6s linear background-color;
+  background-color: var(--color-pallet-3);
+  transition: 0.3s linear background-color;
 }
 
 .game-thumbnail {
@@ -170,6 +189,75 @@ h1 {
 }
 
 
+/* Pop menu stuff */
+.pop-menu-container {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(9, 179, 0, 0.3);
+}
+
+.pop-menu {
+  width: 60%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--color-pallet-1);
+  background-color: #000000;
+}
+
+.top-bar-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid var(--color-pallet-1);
+}
+
+.tab-title {
+  width: 90%;
+  text-align: center;
+  padding-bottom: 0.2rem;
+  padding-top: 1rem;
+  user-select: none;
+}
+
+#closeBtn {
+  width: 10%;
+  border: solid var(--color-pallet-1);
+  border-width: 0px 0px 0px 2px;
+  border-radius: 0px;
+  font-family: 'bitwise';
+  font-size: 2rem;
+  color: var(--color-pallet-1);
+  cursor: pointer;
+  background-color: #000000;
+}
+
+.window-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.window-textbox {
+  width: 95%;
+  height: auto;
+  margin-top: 1rem;
+  padding: 0.6rem;
+  box-sizing: border-box;
+  text-align: left;
+  border: 2px solid var(--color-pallet-1);
+}
+
 
 /* Footer End(Copyright stuff) */
 .footer-end {
@@ -179,7 +267,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 4rem;
   border-top: 2px solid var(--color-pallet-1);
-  background-color: var(--color-pallet-2);
+  background-color: transparent;
 }

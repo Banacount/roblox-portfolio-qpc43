@@ -4,9 +4,33 @@
     padding-bottom: 2rem;
     padding-top: 2rem;
   }
+
+  .tab-title {
+    width: 70%;
+  }
+
+  #closeBtn {
+    width: 30%;
+  }
 }
 
-@media only screen and (max-width: 485px) {
+@media only screen and (max-width: 480px) {
+  .panel-1 {
+    gap: 0.06rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .pop-menu {
+    width: 90%;
+  }
+
+  #closeBtn {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
   .tile-1 {
     flex-direction: column;
     overflow-x: hidden;
@@ -21,8 +45,8 @@
   }
 
   .game-card {
-    width: 5rem;
-    height: 7rem;
+    width: 7rem;
+    height: 9rem;
   }
 
   .game-thumbnail {
