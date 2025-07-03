@@ -7,11 +7,11 @@ const xBtn = document.getElementById("closeBtn")
 let gamestotal = [
   { "gameName": "To the clouds [Beta]",
     "thumbnail": "https://tr.rbxcdn.com/180DAY-d3d22009c3833801045b7cd6cf56d2e8/352/352/Image/Png/noFilter",
-    "link": "https://www.roblox.com/games/70421703883598/To-the-clouds-Beta-1-0"
+    "link": "https://www.roblox.com/games/70421703883598"
   },
-  { "gameName": "Run it [Unfinished]",
+  { "gameName": "A very buggy untitled game",
     "thumbnail": "https://t3.rbxcdn.com/180DAY-2556ccf774bda999220460aeda22dba8",
-    "link": "https://www.roblox.com/games/97560273295895/Run-It" }
+    "link": "https://www.roblox.com/games/97560273295895" }
 ]
 let initHeight = window.innerHeight;
 let didChanged = true

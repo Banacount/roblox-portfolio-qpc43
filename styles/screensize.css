@@ -5,6 +5,10 @@
     padding-top: 2rem;
   }
 
+  .detail-container {
+    margin-top: 1rem;
+  }
+
   .tab-title {
     width: 70%;
   }
@@ -52,5 +56,9 @@
   .game-thumbnail {
     width: 5.5rem;
     height: 7rem;
+  }
+
+  .game-title {
+    font-size: 0.6rem;
   }
 }
