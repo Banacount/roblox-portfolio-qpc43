@@ -1,8 +1,11 @@
 const gameCards = document.getElementById("gameCards");
-const footer = document.getElementById("footerEnd")
-const projectBtn = document.getElementById("projectBtn")
-const popMenu = document.getElementById("popMenuCont")
-const xBtn = document.getElementById("closeBtn")
+const footer = document.getElementById("footerEnd");
+const projectBtn = document.getElementById("projectBtn");
+const popMenu = document.getElementById("popMenuCont");
+const xBtn = document.getElementById("closeBtn");
+
+const showEditsBtn = document.getElementById("editShowBtn")
+const videoEditingContain = document.getElementById("videoEditInner");
 
 let gamestotal = [
   { "gameName": "To the clouds [Beta]",
@@ -12,9 +15,15 @@ let gamestotal = [
   { "gameName": "A very buggy untitled game",
     "thumbnail": "https://t3.rbxcdn.com/180DAY-2556ccf774bda999220460aeda22dba8",
     "link": "https://www.roblox.com/games/97560273295895" }
-]
+];
+let innerWindows = [{
+    "idbtn":'editShowBtn',
+    "idinner": 'videoEditInner'
+  }
+];
+  
 let initHeight = window.innerHeight;
-let didChanged = true
+let didChanged = true;
 
 gamestotal.map((item) => {
   let gameCard = document.createElement("button");
@@ -24,7 +33,7 @@ gamestotal.map((item) => {
   gameCard.className = "game-card green-glow";
   gameThumbnail.className = "game-thumbnail";
   gameTitle.className = "game-title";
-  gameCard.tabIndex = 0
+  gameCard.tabIndex = 0;
   gameCard.addEventListener('click', () => {
     window.open(item.link, item.gameName)
   });
@@ -33,13 +42,32 @@ gamestotal.map((item) => {
   gameThumbnail.style.backgroundImage = `url(${item.thumbnail})`;
   //Appending to parent
   gameCard.append(gameThumbnail);
-  gameCard.append(gameTitle)
+  gameCard.append(gameTitle);
   gameCards.append(gameCard);
 })
+
 
 projectBtn.addEventListener('click', () => {
   popMenu.style.display = 'flex';
 });
 xBtn.addEventListener('click', () => {
   popMenu.style.display = 'none';
-})
+});
+
+
+innerWindows.map((item) => {
+  let innerWin = document.getElementById(item.idinner); 
+  let showcaseBtn = document.getElementById(item.idbtn);
+  // Init
+  innerWin.style.display = "none";
+  // Add listener
+  showcaseBtn.addEventListener('click', () => {
+    if(innerWin.style.display == 'none'){
+      innerWin.style.display = "block";
+      showcaseBtn.innerHTML = "close";
+    } else {
+      innerWin.style.display = "none";
+      showcaseBtn.innerHTML = "open";
+    }
+  });
+});
