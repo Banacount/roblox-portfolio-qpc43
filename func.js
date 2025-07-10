@@ -19,6 +19,10 @@ let gamestotal = [
 let innerWindows = [{
     "idbtn":'editShowBtn',
     "idinner": 'videoEditInner'
+  },
+  {
+    "idbtn":'robloxShowBtn',
+    "idinner":'robloxInner'
   }
 ];
   
