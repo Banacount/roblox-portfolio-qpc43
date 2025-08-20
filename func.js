@@ -12,9 +12,9 @@ let gamestotal = [
     "thumbnail": "https://tr.rbxcdn.com/180DAY-d3d22009c3833801045b7cd6cf56d2e8/352/352/Image/Png/noFilter",
     "link": "https://www.roblox.com/games/70421703883598"
   },
-  { "gameName": "A very buggy untitled game",
-    "thumbnail": "https://t3.rbxcdn.com/180DAY-2556ccf774bda999220460aeda22dba8",
-    "link": "https://www.roblox.com/games/97560273295895" }
+  { "gameName": "Hammer Smasherz [Demo]",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-512d5210fd59d60432dcfb94e5169061/352/352/Image/Png/noFilter",
+    "link": "https://www.roblox.com/games/76111075603434" }
 ];
 let innerWindows = [{
     "idbtn":'editShowBtn',
